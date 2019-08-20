@@ -1,0 +1,14 @@
+<%= form_for(@task) do |t| %>
+  <div>
+    <%= t.label :title %>
+    <%= t.text_field :title %>
+  </div>
+  <div>
+    <%= t.label :details %>
+    <%= t.text_field :details %>
+  </div>
+
+  <%= t.submit %>
+<% end %>
+
+<%= link_to "Back to list", @task %>

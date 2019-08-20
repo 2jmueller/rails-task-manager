@@ -1,0 +1,13 @@
+<h1><%= @task.title %></h1>
+<div>
+  <p>
+    <%= @task.details %>
+  </p>
+</div>
+<div>
+  <p>
+    <%= check_box_tag 'completed', 1, @task.completed %> <%= @message %>
+  </p>
+</div>
+<p><%= link_to "Back to List", tasks_path %></p>
+<p><%= link_to "Edit this task", "/tasks/#{@task.id}/edit" %></p>
